@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="Franquia-master">
+	
+	<class>entity.Acompanhamento</class>
+	<class>entity.Cadastro</class>
+	<class>entity.FichaDeSelecao</class>
+	<class>entity.Franquia</class>
+	<class>entity.Imovel</class>
+	<class>entity.PesquisaDeMercado</class>
+	<class>entity.Pessoa</class>
+	
+	<properties>
+	
+	<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://localhost:3306/franquiasdb" />
+        <property name="username" value="root" />
+        <property name="password" value="123456" />
+        
+            
+        <property name="databasePlatform" value="org.hibernate.dialect.MySQLDialect" />
+		<property name="showSql" value="true" />
+		<property name="hibernate.hbm2ddl.auto" value="create" />
+        
+        
+	
+	</properties>
+	</persistence-unit>
+</persistence>
